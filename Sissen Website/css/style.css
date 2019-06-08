@@ -1,0 +1,138 @@
+:root {
+  --primary-color: rgba(47, 150, 47, 1);
+  --secondary-color: rgb(136, 226, 136);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0.75rem 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* Utility Classes */
+
+.text-primary {
+  color: green;
+}
+
+/* Navbar */
+
+#navbar h1 {
+  display: inline-block;
+}
+#navbar img {
+  height: 100px;
+  width: 100px;
+  padding: 4px;
+  border-radius: 50%;
+  background: rgba(47, 150, 47, 0.5);
+}
+
+#navbar {
+  display: flex;
+  top: 0;
+  position: sticky;
+  background: #fff;
+  color: #fff;
+  justify-content: space-between;
+  z-index: 1;
+}
+
+#navbar ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: right;
+  padding: 0 2rem;
+}
+
+#navbar ul li a {
+  color: green;
+  padding: 0 0.5rem;
+  font-size: 1.3rem;
+}
+
+#showcase {
+  background: #333 url(/images/michael-mims-130838-unsplash.jpg) no-repeat
+    center center/cover;
+  height: 100vh;
+  color: var(--primary-color);
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#showcase .showcase-content h1 {
+  font-size: 5rem;
+  line-height: 7rem;
+  color: rgba(136, 226, 136, 0.5);
+  padding: 3px;
+  margin-top: 40px;
+}
+#showcase .showcase-content h1 .l-heading {
+  color: rgba(255, 255, 255, 0.4);
+}
+.l-heading {
+  font-size: 7rem;
+}
+#showcase .showcase-content p {
+  padding: 2rem;
+  font-size: 1.2rem;
+
+  color: var(--secondary-color);
+}
+
+#who-section .container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+  line-height: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+#who-section i {
+  padding: 2rem;
+  color: var(--primary-color);
+}
+
+#where .container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  line-height: 2rem;
+  width: 100vw;
+  height: 500px;
+  background: var(--primary-color);
+}
+
+#where .container .left {
+  flex: 1;
+  background: url(/images/bill-wegener-285004-unsplash.jpg) no-repeat center
+    center/cover;
+}
+#where .container .right {
+  flex: 1;
+  background: var(--primary-color);
+}
